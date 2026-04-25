@@ -1,0 +1,49 @@
+======================================================================
+SHAP EXPLAINABILITY ANALYSIS REPORT - ME-XBAL
+======================================================================
+
+1. METHODOLOGY:
+   - SHAP (SHapley Additive exPlanations) untuk interpretasi model
+   - TreeExplainer untuk XGBoost models
+   - Samples analyzed: 100
+
+2. FEATURE IMPORTANCE:
+   - anger       : Top feature = PCA_11
+   - disgust     : Top feature = PCA_8
+   - fear        : Top feature = PCA_34
+   - joy         : Top feature = PCA_3
+   - sadness     : Top feature = PCA_15
+   - surprise    : Top feature = PCA_28
+
+3. CROSS-LANGUAGE ANALYSIS:
+   anger:
+      - Sundanese   : 0.0519
+      - Javanese    : 0.0489
+      - Indonesian  : 0.0581
+   disgust:
+      - Sundanese   : 0.0556
+      - Javanese    : 0.0466
+      - Indonesian  : 0.0590
+   fear:
+      - Sundanese   : 0.0537
+      - Javanese    : 0.0487
+      - Indonesian  : 0.0588
+   joy:
+      - Sundanese   : 0.0389
+      - Javanese    : 0.0330
+      - Indonesian  : 0.0411
+   sadness:
+      - Sundanese   : 0.0446
+      - Javanese    : 0.0387
+      - Indonesian  : 0.0517
+   surprise:
+      - Sundanese   : 0.0374
+      - Javanese    : 0.0385
+      - Indonesian  : 0.0392
+
+4. KEY FINDINGS:
+   - Model menggunakan fitur PCA untuk deteksi emosi
+   - SHAP values menunjukkan kontribusi setiap fitur
+   - Cross-language comparison menunjukkan generalisasi model
+
+======================================================================
